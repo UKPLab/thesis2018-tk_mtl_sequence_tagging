@@ -1,4 +1,4 @@
-# MTL Sequence Tagging Framework
+# TensorFlow MTL Sequence Tagging Framework
 
 The MTL sequence tagging framework allows you to train any task that can be framed
 as a sequence tagging problem. Moreover, you can use multi-task learning
