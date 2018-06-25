@@ -21,7 +21,7 @@ Please cite the thesis when using this software:
 Tobias Kahse. "Multi-Task Learning for Argumentation Mining". 2017
 ```
 
-If you have further questions, feel free to contact me at tobias.kahse@outlook.com
+If you have further questions, contact Tobias Kahse (tobias.kahse@outlook.com). Further contact persons are Steffen Eger and Johannes Daxenberger.
 
 ## Requirements
 
