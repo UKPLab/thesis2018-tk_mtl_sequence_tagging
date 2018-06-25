@@ -1,0 +1,102 @@
+# The hyper-parameter search looks for the best word dropout keep probability
+WORD_DROPOUT_KEEP_PROBABILITY:
+  interval_type: continuous
+  start: 0.5
+  end: 1.0
+---
+name: POS_and_Chunk
+num_runs: 2
+epochs: 10
+batch_size: 64
+training:
+  optimizer: adam
+use_variational_dropout: True
+short_cut_connections: True
+tasks:
+  - name: POS
+    train_file:
+      # NOTE: the paths are relative to the `src` directory of this project
+      path: ../examples/conll2000/data/train.txt
+      column_separator: space
+      word_column: 0
+      label_column: 1
+      encoding: utf8
+    dev_file:
+      # Of course, this is not optimal because you should not optimize your system on the test data.
+      path: ../examples/conll2000/data/test.txt
+      column_separator: space
+      word_column: 0
+      label_column: 1
+      encoding: utf8
+    test_file:
+      path: ../examples/conll2000/data/test.txt
+      column_separator: space
+      word_column: 0
+      label_column: 1
+      encoding: utf8
+    output_layer: 0
+    eval_metrics: []
+    classifier: softmax
+    data_format: CONLL
+    dropout_keep_probability: 0.8
+    use_bias: True
+    encoding: NONE
+    type: GENERIC
+  - name: Chunk
+    train_file:
+      path: ../examples/conll2000/data/train.txt
+      column_separator: space
+      word_column: 0
+      label_column: 2
+      encoding: utf8
+    dev_file:
+      # Of course, this is not optimal because you should not optimize your system on the test data.
+      path: ../examples/conll2000/data/test.txt
+      column_separator: space
+      word_column: 0
+      label_column: 2
+      encoding: utf8
+    test_file:
+      path: ../examples/conll2000/data/test.txt
+      column_separator: space
+      word_column: 0
+      label_column: 2
+      encoding: utf8
+    output_layer: 1
+    hidden_layers:
+      - units: 100
+        activation: relu
+        dropout_keep_probability: 1.0
+        use_bias: True
+    eval_metrics:
+      - f1
+      - precision
+      - recall
+    classifier: CRF
+    data_format: CONLL
+    dropout_keep_probability: 0.8
+    use_bias: True
+    encoding: BIO
+    type: GENERIC 
+early_stopping:
+  task_name: Chunk
+  metric: f1
+  patience: 5
+character_level_information:
+  network_type: LSTM
+  dimensionality: 100
+  hidden_units: 100
+eval_metrics:
+  - accuracy
+rnn_unit: LSTM
+rnn_dropout_input_keep_probability: 0.8
+rnn_dropout_output_keep_probability: 0.8
+rnn_dropout_state_keep_probability: 0.8
+use_bias: True
+units: 100
+word_dropout_keep_probability: WORD_DROPOUT_KEEP_PROBABILITY
+# embeddings:
+#     - path: ../data/embeddings/wiki_extvec_words_gz.gz
+#       encoding: utf8
+#       size: 300
+#       gzip: True
