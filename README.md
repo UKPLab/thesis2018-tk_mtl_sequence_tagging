@@ -1,6 +1,6 @@
 # TensorFlow MTL Sequence Tagging Framework
 
-The MTL sequence tagging framework allows to train any task that can be framed
+This MTL sequence tagging framework allows to train any task that can be framed
 as a sequence tagging problem, i.e., POS tagging, Chunking, NER, token-level Argumentation Mining, Grapheme-to-Phoneme Conversion, Lemmatization, etc. 
 
 Moreover, it allows to do multi-task learning
@@ -10,12 +10,21 @@ This framework supports CRF output layers, learned character-level word represen
 The model implements hard parameter-sharing. Our model is an extension of the model of Sogaard & Levy described in [here](http://anthology.aclweb.org/P16-2038). Our model is similar to the following [Keras implementation](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf). See also the references given there.
 This TensorFlow implementation offers high and easy configurability.
 
+
+It was used a.o. in the following papers:
+
+1. Eger, Steffen ; Daxenberger, Johannes ; Stab, Christian ; Gurevych, Iryna :
+Cross-lingual Argumentation Mining: Machine Translation (and a bit of Projection) is All You Need!
+2. Do Dinh, Erik-Lân ; Eger, Steffen ; Gurevych, Iryna :
+Killing four birds with two stones: Multi-Task Learning for Non-Literal Language Detection.
+
+## Using this software
 > **NOTE**
 > All relative paths mentioned in this README, e.g. `cd src`, refer to the
 > root directory of this repository, i.e. the directory which also contains
 > this `README.md` file.
 
-## Using this software
+
 Please cite the thesis when using this software:
 
 ```
