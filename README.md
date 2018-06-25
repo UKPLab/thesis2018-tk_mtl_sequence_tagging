@@ -18,7 +18,12 @@ The model implements hard parameter-sharing. Our model is an extension of the mo
 Please cite the thesis when using this software:
 
 ```
-Tobias Kahse. "Multi-Task Learning for Argumentation Mining". 2017
+@mastersthesis{Kahse:2018,
+  author       = {Tobias Kahse}, 
+  title        = {Multi-Task Learning For Argumentation Mining},
+  school       = {Technical University Darmstadt},
+  year         = 2018,
+}
 ```
 
 If you have further questions, contact Tobias Kahse (tobias.kahse@outlook.com). Further contact persons are Steffen Eger and Johannes Daxenberger.
