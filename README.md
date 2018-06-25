@@ -7,7 +7,7 @@ Moreover, you can use multi-task learning
 to improve the performance compared to single-task learning approaches.
 
 This framework supports CRF output layers, learned character-level word representations (besides standard word embedding based word representations), and different tasks feeding from different layers in the neural network.
-The model implements hard parameter-sharing.
+The model implements hard parameter-sharing. Our model is an extension of the model of Sogaard & Levy described in [here](http://anthology.aclweb.org/P16-2038). Our model is similar to the following [Keras implementation](https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf). See also the references given there.
 
 > **NOTE**
 > All relative paths mentioned in this README, e.g. `cd src`, refer to the
