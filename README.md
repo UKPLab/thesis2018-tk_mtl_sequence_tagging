@@ -14,9 +14,9 @@ Our TensorFlow implementation offers high and easy configurability.
 It was used a.o. in the following papers:
 
 1. Eger, Steffen ; Daxenberger, Johannes ; Stab, Christian ; Gurevych, Iryna :
-Cross-lingual Argumentation Mining: Machine Translation (and a bit of Projection) is All You Need!
+[Cross-lingual Argumentation Mining: Machine Translation (and a bit of Projection) is All You Need!](https://github.com/UKPLab/coling2018-xling_argument_mining)
 2. Do Dinh, Erik-Lân ; Eger, Steffen ; Gurevych, Iryna :
-Killing four birds with two stones: Multi-Task Learning for Non-Literal Language Detection.
+[Killing four birds with two stones: Multi-Task Learning for Non-Literal Language Detection.](https://github.com/UKPLab/coling2018-nonliteral-mtl)
 
 ## Using this software
 
