@@ -20,7 +20,7 @@ It was used a.o. in the following papers:
 
 ## Using this software
 
-Please cite the thesis when using this software:
+Please cite the thesis and the accompanying paper when using this software:
 
 ```
 @mastersthesis{Kahse:2018,
@@ -30,6 +30,20 @@ Please cite the thesis when using this software:
   year         = 2018,
 }
 ```
+
+```
+@inproceedings{Schulz:2018:NAACL,
+	title = {Multi-Task Learning for Argumentation Mining in Low-Resource Settings},
+	author = {Schulz, Claudia and Eger, Steffen and Daxenberger, Johannes and Kahse, Tobias and Gurevych, Iryna},
+	publisher = {Association for Computational Linguistics},
+	booktitle = {Proceedings of the 16th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+	pages = {35--41},
+	month = jun,
+	year = {2018},
+	location = {New Orleans, USA}
+}
+```
+
 
 If you have further questions, contact Tobias Kahse (tobias.kahse@outlook.com). Further contact persons are Steffen Eger and Johannes Daxenberger.
 
