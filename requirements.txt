@@ -10,7 +10,7 @@ pbr==3.0.0
 protobuf==3.3.0
 pydot-ng==1.0.0
 pyparsing==2.2.0
-PyYAML==3.12
+PyYAML==5.1
 ruamel.ordereddict==0.4.9
 ruamel.yaml==0.14.12
 scikit-learn==0.18.1
