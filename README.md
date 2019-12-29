@@ -45,7 +45,7 @@ Please cite the thesis and the accompanying paper when using this software:
 ```
 
 
-If you have further questions, contact Tobias Kahse (tobias.kahse@outlook.com). Further contact persons are Steffen Eger and Johannes Daxenberger.
+If you have further questions, contact Tobias Kahse (tobias.kahse@outlook.com). Further contact persons are Steffen Eger (eger@aiphes.tu-darmstadt.de) and Johannes Daxenberger.
 
 ## Requirements
 
