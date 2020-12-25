@@ -17,6 +17,7 @@ It was used a.o. in the following papers:
 [Cross-lingual Argumentation Mining: Machine Translation (and a bit of Projection) is All You Need!](https://github.com/UKPLab/coling2018-xling_argument_mining)
 2. Do Dinh, Erik-Lân ; Eger, Steffen ; Gurevych, Iryna :
 [Killing four birds with two stones: Multi-Task Learning for Non-Literal Language Detection.](https://github.com/UKPLab/coling2018-nonliteral-mtl)
+3. Lee, Ji-Ung; Eger, Steffen; Daxenberger, Johannes; Gurevych, Iryna: [UKP TU-DA at GermEval 2017: Deep Learning for Aspect Based Sentiment Detection](https://github.com/UKPLab/germeval2017-sentiment-detection)
 
 ## Using this software
 
