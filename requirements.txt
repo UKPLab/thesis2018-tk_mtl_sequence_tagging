@@ -7,7 +7,7 @@ nltk==3.2.4
 numpy==1.12.1
 packaging==16.8
 pbr==3.0.0
-protobuf==3.3.0
+protobuf==3.18.3
 pydot-ng==1.0.0
 pyparsing==2.2.0
 PyYAML==3.12
